@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/root_view"
+    android:weightSum="5"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:scaleType="fitXY"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@drawable/up" >
+        <Button
+            android:id="@+id/btn_deposit_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="#603022"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:text="             "/>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:layout_weight="2.50"
+        android:id="@+id/bank_interior"
+        android:src="@drawable/bank_interior"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.20"
+        android:orientation="vertical"
+        android:background="#E3D5BB">
+        <TextView
+            android:id="@+id/tv_earned_coins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/tv_redeemed_coins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text=""/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.45"
+        android:orientation="vertical"
+        android:background="#253571">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.85"
+        android:orientation="vertical"
+        android:background="#C18B56">
+
+    </LinearLayout>
+</LinearLayout>

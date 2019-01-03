@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bookstorevertbg">
+
+    <ImageView
+        android:id="@+id/imageView_toddler"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+
+        android:scaleType="fitXY"
+       android:layout_marginTop="110dp"
+        android:src="@drawable/toddlers" />
+
+    <ImageView
+        android:id="@+id/image_kids"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/imageView_toddler"
+        android:layout_marginLeft="12dp"
+        android:scaleType="fitXY"
+       android:layout_marginTop="110dp"
+        android:src="@drawable/kids" />
+
+    <ImageView
+        android:id="@+id/image_preteens"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/image_kids"
+        android:layout_marginLeft="18dp"
+        android:scaleType="fitXY"
+       android:layout_marginTop="110dp"
+        android:src="@drawable/pre_teens" />
+
+    <ImageView
+        android:id="@+id/image_adults"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"
+        android:scaleType="fitXY"
+       android:layout_marginTop="110dp"
+        android:src="@drawable/adults" />
+</RelativeLayout>
